@@ -569,7 +569,7 @@ h4 {
     .section-title {
     width: 364px;
     }
-     .section-title h2 {
+    .section-title h2 {
     font-size: 32px;
     }
     .burger-menu {
@@ -588,5 +588,25 @@ h4 {
     }
     .html {
     overflow-y: hidden;
+    }
+    .contacts-me-form {
+        justify-content: center;
+    }
+    .foot {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .start-foot, .soc-img {
+        justify-content: center;
+    }
+    .rss {
+        margin: 16px 0 32px 0;
+    }
+    .gh, .z, .year {
+        margin: 28px 10px 0 10px;
+    }
+    .inst, .fb, .tw, .pint {
+        margin: 0 10px 40px 10px;
     }
 }

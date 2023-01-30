@@ -286,18 +286,22 @@ h3 {
 }
 
 .video-jpg {
-    position: relative;
     height: 705px;
     background-image: url('./assets/jpg/video-player.jpg');
     background-size: cover;
     width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
 }
 
 .play-hover {
-    position: absolute;
-    left: 640px;
-    top: 290px;
     transition: 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 18em;
 }
 
 .play-hover:hover {
@@ -540,72 +544,97 @@ h4 {
 
 @media (max-width:768px) {
     .hero {
-    top: 200px;
-    margin: 0 0 0 10px;
+        top: 200px;
+        margin: 0 0 0 10px;
     }
+
     .herophoto {
-    height: 590px;
+        height: 590px;
     }
+
     .AlexaRise {
-    font-weight: normal;
-    font-size: 32px;
-    color: #FFFFFF;
-    margin: 0;
+        font-weight: normal;
+        font-size: 32px;
+        color: #FFFFFF;
+        margin: 0;
     }
+
     .hero-text {
-    width: 350px;
-    line-height: 24px;
-    margin: 20px 0 60px 0;
+        width: 350px;
+        line-height: 24px;
+        margin: 20px 0 60px 0;
     }
+
     .hero-btn {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 7px 73px;
-    width: 219px;
-    height: 54px;
-    margin: 0;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 7px 73px;
+        width: 219px;
+        height: 54px;
+        margin: 0;
     }
+
+    .video-jpg {
+        height: 450px;
+    }
+
+    .play-hover {
+        padding-top: 9em;  
+    }
+
     .section-title {
-    width: 364px;
+        width: 364px;
     }
+
     .section-title h2 {
-    font-size: 32px;
+        font-size: 32px;
     }
+
     .burger-menu {
-    display: block;
+        display: block;
     }
+
     .nav-list {
-    display: none;
+        display: none;
     }
+
     .logo {
-    left: 30px;
+        left: 30px;
     }
+
     .portfolio-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 50px 0;
     }
+
     .html {
-    overflow-y: hidden;
+        overflow-y: hidden;
     }
+
     .contacts-me-form {
         justify-content: center;
     }
+
     .foot {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
     .start-foot, .soc-img {
         justify-content: center;
     }
+
     .rss {
         margin: 16px 0 32px 0;
     }
+
     .gh, .z, .year {
         margin: 28px 10px 0 10px;
     }
+    
     .inst, .fb, .tw, .pint {
         margin: 0 10px 40px 10px;
     }
